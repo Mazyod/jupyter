@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "jupyterlab"
+version = "3.0.4"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+pandas = "^1.3.2"
+nltk = "^3.6.2"
+matplotlib = ">=3.3"
+seaborn = "^0.11.2"
+sklearn = "^0.0"
+scattertext = "^0.1.4"
+spacy = "^3.1.2"
+lime = "^0.2.0"
+plotly = "^5.2.2"
+cufflinks = "^0.17.3"
+xgboost = "^1.4.2"
+lightgbm = "^3.2.1"
+catboost = "^1.0.0"
+ipywidgets = "^7.6.3"
+tensorflow-hub = "^0.12.0"
+tensorflow-text = ">=2.3.0"
+transformers = "^4.9.2"
+torch = "^1.9.0"
+torchvision = "^0.10.0"
+hyperopt = "^0.2.5"
+pyodbc = "^4.0.32"
+yellowbrick = "^1.3.post1"
+kneed = "^0.7.0"
+pyarrow = "^5.0.0"
+dask = {version = "^2021.8.1", extras = ["complete"]}
+scikeras = ">=0.2"
+skorch = "^0.10.0"
+human-learn = "^0.3.1"
+dask-ml = {version = "^1.9.0", extras = ["complete"]}
+whatlies = {version = "^0.6.3", extras = ["all"]}
+rasalit = { git = "https://github.com/RasaHQ/rasalit.git", branch = "main" }
+rasa = "^2.8.9"
+openpyxl = "^3.0.7"
+xlrd = "^2.0.1"
+XlsxWriter = "^3.0.1"
+python-lsp-server = {version = "^1.2.1", extras = ["all"]}
+jupyterlab-lsp = "^3.8.1"
+Cython = "^0.29.24"
+voila = "^0.2.14"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
