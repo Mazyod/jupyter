@@ -30,4 +30,4 @@ jobs:
           context: .
           build-args: "BASE_IMAGE=openimage/jupyter:gpu-base"
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/duckling:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jupyter:gpu
