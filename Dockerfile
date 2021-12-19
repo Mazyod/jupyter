@@ -29,4 +29,4 @@ RUN conda remove --force --yes nodejs \
 	&& wget -q -O- https://deb.nodesource.com/setup_16.x | sudo -E bash - \
 	&& apt-get install -y nodejs
 
-RUN jupyter labextension install jupyterlab-plotly @jupyter-widgets/jupyterlab-manager plotlywidget@4.9.0
+RUN jupyter labextension install jupyterlab-plotly @jupyter-widgets/jupyterlab-manager plotlywidget
