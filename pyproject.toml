@@ -46,6 +46,7 @@ jupyterlab-lsp = "^3.8.1"
 Cython = "^0.29.26"
 voila = "^0.3.0"
 papermill = "^2.3.3"
+fuzzywuzzy = {version = "^0.18.0", extras = ["speedup"]}
 
 [tool.poetry.dev-dependencies]
 
