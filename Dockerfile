@@ -3,12 +3,10 @@ FROM ${BASE_IMAGE}
 
 USER root
 
-# labextensions require nodejs != 15 :/
-RUN conda remove --force --yes nodejs
-
-RUN apt-get update \
-	&& wget -q -O- https://deb.nodesource.com/setup_16.x | sudo -E bash - \
-	&& apt-get install -y --no-install-recommends unixodbc-dev unixodbc libpq-dev nodejs
+# update all packages to latest versions
+# also, labextensions require nodejs != 15
+# this command will take care of that
+RUN conda update -y --all
 
 USER ${NB_UID}
 
