@@ -1,15 +1,11 @@
 ARG BASE_IMAGE=jupyter/tensorflow-notebook:python-3.8.8
 FROM ${BASE_IMAGE}
 
-USER root
-
 # update all packages to latest versions
 # also, labextensions require nodejs != 15
 # this command will take care of that
 # NOTE: tried to update conda as well, but it fails
 RUN conda update -y --all
-
-USER ${NB_UID}
 
 COPY requirements.txt .
 
