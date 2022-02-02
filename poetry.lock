@@ -1222,7 +1222,7 @@ python-versions = "*"
 
 [[package]]
 name = "ipykernel"
-version = "6.7.0"
+version = "6.8.0"
 description = "IPython Kernel for Jupyter"
 category = "main"
 optional = false
@@ -1834,19 +1834,6 @@ developer = ["black (==21.5b1)", "pre-commit (>=2.12)"]
 doc = ["sphinx (>=4.0,<5.0)", "pydata-sphinx-theme (>=0.6,<1.0)", "sphinx-gallery (>=0.9,<1.0)", "numpydoc (>=1.1)", "pillow (>=8.2)", "nb2plots (>=0.6)", "texext (>=0.6.6)"]
 extra = ["lxml (>=4.5)", "pygraphviz (>=1.7)", "pydot (>=1.4.1)"]
 test = ["pytest (>=6.2)", "pytest-cov (>=2.12)", "codecov (>=2.1)"]
-
-[[package]]
-name = "nlpaug"
-version = "1.1.10"
-description = "Natural language processing augmentation library for deep neural networks"
-category = "main"
-optional = false
-python-versions = "*"
-
-[package.dependencies]
-numpy = ">=1.16.2"
-pandas = ">=1.2.0"
-requests = ">=2.22.0"
 
 [[package]]
 name = "nltk"
@@ -2860,35 +2847,6 @@ Sanic-Cors = ">=1.0.0,<2.0.0"
 typing-extensions = ">=3.7.4,<4.0.0"
 urllib3 = ">=1.26.5,<2.0.0"
 uvloop = {version = "<0.15.0", markers = "sys_platform != \"win32\""}
-
-[[package]]
-name = "rasalit"
-version = "0.1.2"
-description = ""
-category = "main"
-optional = false
-python-versions = "*"
-develop = false
-
-[package.dependencies]
-altair = ">=4.1.0"
-nlpaug = ">=1.1.2"
-pandas = ">=1.0.3"
-pyyaml = ">=5.3.1"
-rasa = ">=2.4"
-spacy = ">=2.3.2"
-streamlit = ">=0.57.3"
-tensorflow = ">=2.3.1"
-typer = ">=0.3.0"
-
-[package.extras]
-dev = ["flake8 (>=3.6.0)", "pytest (>=4.0.2)", "pre-commit (>=2.7.1)", "black"]
-
-[package.source]
-type = "git"
-url = "https://github.com/RasaHQ/rasalit.git"
-reference = "main"
-resolved_reference = "39153f545468184dcee550cb56a93dfe505c8a11"
 
 [[package]]
 name = "redis"
@@ -4429,7 +4387,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.8"
-content-hash = "b3934605c5e3717d26a01b47fc9a9f63da15db747a359a02e44a22de665d4705"
+content-hash = "8d329e9a32f2eb45168f0de061c52ed1f7bffd31ec498cf054fab776dd93be74"
 
 [metadata.files]
 absl-py = [
@@ -5172,8 +5130,8 @@ ipaddress = [
     {file = "ipaddress-1.0.23.tar.gz", hash = "sha256:b7f8e0369580bb4a24d5ba1d7cc29660a4a6987763faf1d8a8046830e020e7e2"},
 ]
 ipykernel = [
-    {file = "ipykernel-6.7.0-py3-none-any.whl", hash = "sha256:6203ccd5510ff148e9433fd4a2707c5ce8d688f026427f46e13d7ebf9b3e9787"},
-    {file = "ipykernel-6.7.0.tar.gz", hash = "sha256:d82b904fdc2fd8c7b1fbe0fa481c68a11b4cd4c8ef07e6517da1f10cc3114d24"},
+    {file = "ipykernel-6.8.0-py3-none-any.whl", hash = "sha256:6c977ead67ec22151993a5f848b97e57a5e771f979b510941e157b2e7fe54184"},
+    {file = "ipykernel-6.8.0.tar.gz", hash = "sha256:67d316d527eca24e3ded45a2b38689615bcda1aa520a11af0accdcea7152c18a"},
 ]
 ipython = [
     {file = "ipython-7.31.1-py3-none-any.whl", hash = "sha256:55df3e0bd0f94e715abd968bedd89d4e8a7bce4bf498fb123fed4f5398fea874"},
@@ -5661,9 +5619,6 @@ nest-asyncio = [
 networkx = [
     {file = "networkx-2.6.3-py3-none-any.whl", hash = "sha256:80b6b89c77d1dfb64a4c7854981b60aeea6360ac02c6d4e4913319e0a313abef"},
     {file = "networkx-2.6.3.tar.gz", hash = "sha256:c0946ed31d71f1b732b5aaa6da5a0388a345019af232ce2f49c766e2d6795c51"},
-]
-nlpaug = [
-    {file = "nlpaug-1.1.10-py3-none-any.whl", hash = "sha256:b166ee2c6c317091f4ca4db8055a7f77b53cc7b2a16492f38a0c6ca778e9a5da"},
 ]
 nltk = [
     {file = "nltk-3.6.7-py3-none-any.whl", hash = "sha256:22e97be5d6c784d93a52d17860515cc50c5cfcc620b1f5c3747765041255a01e"},
@@ -6556,7 +6511,6 @@ rasa-sdk = [
     {file = "rasa-sdk-3.0.4.tar.gz", hash = "sha256:36c5d7928e4f98b4966a11973a8b5798ecfa628619fcec01dcc8b56680bb9fa5"},
     {file = "rasa_sdk-3.0.4-py3-none-any.whl", hash = "sha256:0f0ff23ac7650d4ec98b6b26694babdfa7286da4c85d481ebd5aa44710e2f39a"},
 ]
-rasalit = []
 redis = [
     {file = "redis-3.5.3-py2.py3-none-any.whl", hash = "sha256:432b788c4530cfe16d8d943a09d40ca6c16149727e4afe8c2c9d5580c59d9f24"},
     {file = "redis-3.5.3.tar.gz", hash = "sha256:0e7e0cfca8660dea8b7d5cd8c4f6c5e29e11f31158c0b0ae91a397f00e5a05a2"},

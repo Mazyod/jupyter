@@ -11,9 +11,5 @@ COPY requirements.txt .
 
 RUN git config --global http.sslverify false
 
-RUN conda install --file requirements.txt \
-	&& rm requirements.txt \
-	&& fix-permissions "${CONDA_DIR}" \
-	&& fix-permissions "/home/${NB_USER}"
-
+RUN conda install --file requirements.txt
 RUN jupyter labextension install jupyterlab-plotly @jupyter-widgets/jupyterlab-manager plotlywidget

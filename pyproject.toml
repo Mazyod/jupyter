@@ -36,7 +36,6 @@ skorch = "^0.10.0"
 human-learn = "^0.3.1"
 dask-ml = {version = "^1.9.0", extras = ["complete"]}
 whatlies = {version = "^0.6.3", extras = ["all"]}
-rasalit = { git = "https://github.com/RasaHQ/rasalit.git", branch = "main" }
 rasa = "^3.0.3"
 openpyxl = "^3.0.7"
 xlrd = "^2.0.1"
@@ -47,6 +46,7 @@ Cython = "^0.29.26"
 voila = "^0.3.0"
 papermill = "^2.3.3"
 fuzzywuzzy = {version = "^0.18.0", extras = ["speedup"]}
+streamlit = "^1.5.0"
 
 [tool.poetry.dev-dependencies]
 
