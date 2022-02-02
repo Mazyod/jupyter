@@ -6,7 +6,8 @@ USER root
 # update all packages to latest versions
 # also, labextensions require nodejs != 15
 # this command will take care of that
-RUN conda update -y -n base conda && conda update -y --all
+# NOTE: tried to update conda as well, but it fails
+RUN conda update -y --all
 
 USER ${NB_UID}
 
