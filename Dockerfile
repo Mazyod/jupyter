@@ -18,6 +18,7 @@ COPY requirements.txt .
 RUN git config --global http.sslverify false
 
 # no idea why export doesn't work
+# NOTE: tried to use conda to install, but it is riddled with issues
 RUN CURL_CA_BUNDLE='' python -m pip install \
 	--default-timeout=100 \
 	--ignore-installed \
