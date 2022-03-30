@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=jupyter/tensorflow-notebook:python-3.8.8
+ARG BASE_IMAGE=jupyter/tensorflow-notebook:python-3.9.10
 FROM ${BASE_IMAGE}
 
 USER root

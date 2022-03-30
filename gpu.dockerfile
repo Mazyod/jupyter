@@ -1,4 +1,4 @@
-FROM jupyter/tensorflow-notebook:python-3.8.8
+FROM jupyter/tensorflow-notebook:python-3.9.10
 
 USER root
 
