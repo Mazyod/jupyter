@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: "{context}/gpu.dockerfile"
+          file: ./gpu.dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/jupyter:gpu-base
 
