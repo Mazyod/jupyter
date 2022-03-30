@@ -24,7 +24,15 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build and push Docker image
+      - name: Build and push GPU Base Docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: "{context}/gpu.dockerfile"
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/jupyter:gpu-base
+
+      - name: Build and push Jupterlab Docker image
         uses: docker/build-push-action@v2
         with:
           context: .
