@@ -30,4 +30,4 @@ RUN CURL_CA_BUNDLE='' python -m pip install \
 	&& fix-permissions "${CONDA_DIR}" \
 	&& fix-permissions "/home/${NB_USER}"
 
-RUN jupyter labextension install jupyterlab-plotly @jupyter-widgets/jupyterlab-manager plotlywidget
+RUN jupyter labextension install jupyterlab-plotly @jupyter-widgets/jupyterlab-manager plotlywidget @jupyterlab/git
