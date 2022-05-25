@@ -3,7 +3,7 @@ FROM ${BASE_IMAGE}
 
 USER root
 
-RUN apt update && apt install -y unixodbc-dev
+RUN apt update && apt install -y unixodbc unixodbc-dev g++ tdsodbc
 
 USER ${NB_USER}
 
@@ -13,6 +13,7 @@ USER ${NB_USER}
 # NOTE: tried to update conda as well, but it fails
 RUN conda update -y --all
 
+COPY odbcinst.ini /etc/odbcinst.ini
 COPY requirements.txt .
 
 RUN git config --global http.sslverify false
