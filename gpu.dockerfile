@@ -27,7 +27,7 @@ ENV CUDA_VERSION 11.2.0
 
 # For libraries in the cuda-compat-* package: https://docs.nvidia.com/cuda/eula/index.html#attachment-a
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends cuda-cudart-11-2=11.2.72-1 cuda-compat-11-2 \
+    && apt-get install -y --no-install-recommends cuda-cudart-11-2=11.2.72-1 cuda-compat-11-2=460.91.03-1 \
     && ln -s cuda-11.2 /usr/local/cuda \
     && rm -rf /var/lib/apt/lists/*
 
